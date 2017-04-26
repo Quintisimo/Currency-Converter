@@ -38,7 +38,7 @@ namespace Currency_Converter_GUI {
             my_currency = MyCurrencyBox.SelectedValue.ToString();
 
             if (my_currency != "") {
-                MyAmountCode.Text = my_currency.Substring(my_currency.Length - GET_CODE, CODE_LENGTH); ;
+                MyAmountCode.Text = my_currency.Substring(my_currency.Length - GET_CODE, CODE_LENGTH);
                 MyCurrencyLabel.Enabled = false;
                 MyCurrencyBox.Enabled = false;
                 ConvertCurrencyLabel.Enabled = true;
