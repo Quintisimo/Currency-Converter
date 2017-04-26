@@ -37,6 +37,14 @@ namespace Currency_Converter_GUI {
             return countries;
         } //end InitialiseComboBox()             
 
+        /// <summary>
+        /// Converts the amount entered by the user to Australian dollars first and then converts that
+        /// to the currency they want.
+        /// </summary>
+        /// <param name="my_currency_type">User's Currency type</param>
+        /// <param name="convert_currency_type">Cureency the user wants to convert to</param>
+        /// <param name="amount">The amount the user entered</param>
+        /// <returns></returns>
         public static double CurrencyConversion(string my_currency_type, string convert_currency_type, double amount) {
             double convert_amount = 0;
             int country = 0;

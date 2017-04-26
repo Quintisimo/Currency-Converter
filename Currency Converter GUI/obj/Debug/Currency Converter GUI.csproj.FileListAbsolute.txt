@@ -16,3 +16,6 @@ C:\Users\quint\OneDrive for Business\Second Year\Semester 1\CAB201\Currency Conv
 C:\Users\quint\OneDrive for Business\Second Year\Semester 1\CAB201\Currency Converter GUI\Currency Converter GUI\bin\Debug\Currency Converter GUI.exe
 C:\Users\quint\OneDrive for Business\Second Year\Semester 1\CAB201\Currency Converter GUI\Currency Converter GUI\bin\Debug\Currency Converter GUI.pdb
 C:\Users\quint\OneDrive for Business\Second Year\Semester 1\CAB201\Currency Converter GUI\Currency Converter GUI\obj\Debug\Currency_Converter_GUI.Form1.resources
+C:\Users\quint\OneDrive\Documents\GitHub\Currency-Converter\Currency Converter GUI\bin\Debug\Currency Converter GUI.exe.config
+C:\Users\quint\OneDrive\Documents\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency Converter GUI.exe
+C:\Users\quint\OneDrive\Documents\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency Converter GUI.pdb
