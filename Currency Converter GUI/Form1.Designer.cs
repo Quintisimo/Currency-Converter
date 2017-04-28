@@ -23,186 +23,186 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.MyCurrencyBox = new System.Windows.Forms.ComboBox();
-            this.ConvertCurrencyBox = new System.Windows.Forms.ComboBox();
-            this.MyCurrencyLabel = new System.Windows.Forms.Label();
-            this.ConvertCurrencyLabel = new System.Windows.Forms.Label();
-            this.MyAmountText = new System.Windows.Forms.TextBox();
-            this.ConvertAmountText = new System.Windows.Forms.TextBox();
-            this.MyAmountLabel = new System.Windows.Forms.Label();
-            this.ConvertAmountLabel = new System.Windows.Forms.Label();
-            this.EqualsButton = new System.Windows.Forms.Button();
-            this.RepeatConversionGroup = new System.Windows.Forms.GroupBox();
-            this.NoButton = new System.Windows.Forms.RadioButton();
-            this.YesButton = new System.Windows.Forms.RadioButton();
-            this.MyAmountCode = new System.Windows.Forms.Label();
-            this.ConvertAmountCode = new System.Windows.Forms.Label();
-            this.RepeatConversionGroup.SuspendLayout();
+            this.myCurrencyBox = new System.Windows.Forms.ComboBox();
+            this.convertCurrencyBox = new System.Windows.Forms.ComboBox();
+            this.myCurrencyLabel = new System.Windows.Forms.Label();
+            this.convertCurrencyLabel = new System.Windows.Forms.Label();
+            this.myAmountText = new System.Windows.Forms.TextBox();
+            this.convertAmountText = new System.Windows.Forms.TextBox();
+            this.myAmountLabel = new System.Windows.Forms.Label();
+            this.convertAmountLabel = new System.Windows.Forms.Label();
+            this.equalsButton = new System.Windows.Forms.Button();
+            this.repeatConversionGroup = new System.Windows.Forms.GroupBox();
+            this.noButton = new System.Windows.Forms.RadioButton();
+            this.yesButton = new System.Windows.Forms.RadioButton();
+            this.myAmountCode = new System.Windows.Forms.Label();
+            this.convertAmountCode = new System.Windows.Forms.Label();
+            this.repeatConversionGroup.SuspendLayout();
             this.SuspendLayout();
             // 
-            // MyCurrencyBox
+            // myCurrencyBox
             // 
-            this.MyCurrencyBox.FormattingEnabled = true;
-            this.MyCurrencyBox.Location = new System.Drawing.Point(45, 91);
-            this.MyCurrencyBox.Name = "MyCurrencyBox";
-            this.MyCurrencyBox.Size = new System.Drawing.Size(244, 33);
-            this.MyCurrencyBox.TabIndex = 0;
-            this.MyCurrencyBox.SelectedIndexChanged += new System.EventHandler(this.MyCurrencyBox_SelectedIndexChanged);
+            this.myCurrencyBox.FormattingEnabled = true;
+            this.myCurrencyBox.Location = new System.Drawing.Point(45, 91);
+            this.myCurrencyBox.Name = "myCurrencyBox";
+            this.myCurrencyBox.Size = new System.Drawing.Size(244, 33);
+            this.myCurrencyBox.TabIndex = 0;
+            this.myCurrencyBox.SelectedIndexChanged += new System.EventHandler(this.myCurrencyBox_SelectedIndexChanged);
             // 
-            // ConvertCurrencyBox
+            // convertCurrencyBox
             // 
-            this.ConvertCurrencyBox.FormattingEnabled = true;
-            this.ConvertCurrencyBox.Location = new System.Drawing.Point(578, 91);
-            this.ConvertCurrencyBox.Name = "ConvertCurrencyBox";
-            this.ConvertCurrencyBox.Size = new System.Drawing.Size(244, 33);
-            this.ConvertCurrencyBox.TabIndex = 1;
-            this.ConvertCurrencyBox.SelectedIndexChanged += new System.EventHandler(this.ConvertCurrencyBox_SelectedIndexChanged);
+            this.convertCurrencyBox.FormattingEnabled = true;
+            this.convertCurrencyBox.Location = new System.Drawing.Point(578, 91);
+            this.convertCurrencyBox.Name = "convertCurrencyBox";
+            this.convertCurrencyBox.Size = new System.Drawing.Size(244, 33);
+            this.convertCurrencyBox.TabIndex = 1;
+            this.convertCurrencyBox.SelectedIndexChanged += new System.EventHandler(this.convertCurrencyBox_SelectedIndexChanged);
             // 
-            // MyCurrencyLabel
+            // myCurrencyLabel
             // 
-            this.MyCurrencyLabel.AutoSize = true;
-            this.MyCurrencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyCurrencyLabel.Location = new System.Drawing.Point(45, 60);
-            this.MyCurrencyLabel.Name = "MyCurrencyLabel";
-            this.MyCurrencyLabel.Size = new System.Drawing.Size(178, 25);
-            this.MyCurrencyLabel.TabIndex = 2;
-            this.MyCurrencyLabel.Text = "Currency I have";
+            this.myCurrencyLabel.AutoSize = true;
+            this.myCurrencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myCurrencyLabel.Location = new System.Drawing.Point(45, 60);
+            this.myCurrencyLabel.Name = "myCurrencyLabel";
+            this.myCurrencyLabel.Size = new System.Drawing.Size(178, 25);
+            this.myCurrencyLabel.TabIndex = 2;
+            this.myCurrencyLabel.Text = "Currency I have";
             // 
-            // ConvertCurrencyLabel
+            // convertCurrencyLabel
             // 
-            this.ConvertCurrencyLabel.AutoSize = true;
-            this.ConvertCurrencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConvertCurrencyLabel.Location = new System.Drawing.Point(578, 60);
-            this.ConvertCurrencyLabel.Name = "ConvertCurrencyLabel";
-            this.ConvertCurrencyLabel.Size = new System.Drawing.Size(176, 25);
-            this.ConvertCurrencyLabel.TabIndex = 3;
-            this.ConvertCurrencyLabel.Text = "Currency I want";
+            this.convertCurrencyLabel.AutoSize = true;
+            this.convertCurrencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convertCurrencyLabel.Location = new System.Drawing.Point(578, 60);
+            this.convertCurrencyLabel.Name = "convertCurrencyLabel";
+            this.convertCurrencyLabel.Size = new System.Drawing.Size(176, 25);
+            this.convertCurrencyLabel.TabIndex = 3;
+            this.convertCurrencyLabel.Text = "Currency I want";
             // 
-            // MyAmountText
+            // myAmountText
             // 
-            this.MyAmountText.Location = new System.Drawing.Point(88, 307);
-            this.MyAmountText.Name = "MyAmountText";
-            this.MyAmountText.Size = new System.Drawing.Size(178, 31);
-            this.MyAmountText.TabIndex = 4;
-            this.MyAmountText.TextChanged += new System.EventHandler(this.MyAmountText_TextChanged);
+            this.myAmountText.Location = new System.Drawing.Point(88, 307);
+            this.myAmountText.Name = "myAmountText";
+            this.myAmountText.Size = new System.Drawing.Size(178, 31);
+            this.myAmountText.TabIndex = 4;
+            this.myAmountText.TextChanged += new System.EventHandler(this.myAmountText_TextChanged);
             // 
-            // ConvertAmountText
+            // convertAmountText
             // 
-            this.ConvertAmountText.Location = new System.Drawing.Point(619, 307);
-            this.ConvertAmountText.Name = "ConvertAmountText";
-            this.ConvertAmountText.Size = new System.Drawing.Size(178, 31);
-            this.ConvertAmountText.TabIndex = 5;
+            this.convertAmountText.Location = new System.Drawing.Point(619, 307);
+            this.convertAmountText.Name = "convertAmountText";
+            this.convertAmountText.Size = new System.Drawing.Size(178, 31);
+            this.convertAmountText.TabIndex = 5;
             // 
-            // MyAmountLabel
+            // myAmountLabel
             // 
-            this.MyAmountLabel.AutoSize = true;
-            this.MyAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyAmountLabel.Location = new System.Drawing.Point(85, 279);
-            this.MyAmountLabel.Name = "MyAmountLabel";
-            this.MyAmountLabel.Size = new System.Drawing.Size(162, 25);
-            this.MyAmountLabel.TabIndex = 6;
-            this.MyAmountLabel.Text = "Amount I have";
+            this.myAmountLabel.AutoSize = true;
+            this.myAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myAmountLabel.Location = new System.Drawing.Point(85, 279);
+            this.myAmountLabel.Name = "myAmountLabel";
+            this.myAmountLabel.Size = new System.Drawing.Size(162, 25);
+            this.myAmountLabel.TabIndex = 6;
+            this.myAmountLabel.Text = "Amount I have";
             // 
-            // ConvertAmountLabel
+            // convertAmountLabel
             // 
-            this.ConvertAmountLabel.AutoSize = true;
-            this.ConvertAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConvertAmountLabel.Location = new System.Drawing.Point(616, 278);
-            this.ConvertAmountLabel.Name = "ConvertAmountLabel";
-            this.ConvertAmountLabel.Size = new System.Drawing.Size(160, 25);
-            this.ConvertAmountLabel.TabIndex = 7;
-            this.ConvertAmountLabel.Text = "Amount I want";
+            this.convertAmountLabel.AutoSize = true;
+            this.convertAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convertAmountLabel.Location = new System.Drawing.Point(616, 278);
+            this.convertAmountLabel.Name = "convertAmountLabel";
+            this.convertAmountLabel.Size = new System.Drawing.Size(160, 25);
+            this.convertAmountLabel.TabIndex = 7;
+            this.convertAmountLabel.Text = "Amount I want";
             // 
-            // EqualsButton
+            // equalsButton
             // 
-            this.EqualsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EqualsButton.Location = new System.Drawing.Point(335, 282);
-            this.EqualsButton.Name = "EqualsButton";
-            this.EqualsButton.Size = new System.Drawing.Size(169, 85);
-            this.EqualsButton.TabIndex = 8;
-            this.EqualsButton.Text = "Equals";
-            this.EqualsButton.UseVisualStyleBackColor = true;
-            this.EqualsButton.Click += new System.EventHandler(this.EqualsButton_Click);
+            this.equalsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.equalsButton.Location = new System.Drawing.Point(335, 282);
+            this.equalsButton.Name = "equalsButton";
+            this.equalsButton.Size = new System.Drawing.Size(169, 85);
+            this.equalsButton.TabIndex = 8;
+            this.equalsButton.Text = "Equals";
+            this.equalsButton.UseVisualStyleBackColor = true;
+            this.equalsButton.Click += new System.EventHandler(this.equalsButton_Click);
             // 
-            // RepeatConversionGroup
+            // repeatConversionGroup
             // 
-            this.RepeatConversionGroup.Controls.Add(this.NoButton);
-            this.RepeatConversionGroup.Controls.Add(this.YesButton);
-            this.RepeatConversionGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RepeatConversionGroup.Location = new System.Drawing.Point(282, 433);
-            this.RepeatConversionGroup.Name = "RepeatConversionGroup";
-            this.RepeatConversionGroup.Size = new System.Drawing.Size(283, 161);
-            this.RepeatConversionGroup.TabIndex = 9;
-            this.RepeatConversionGroup.TabStop = false;
-            this.RepeatConversionGroup.Text = "Another Conversion?";
+            this.repeatConversionGroup.Controls.Add(this.noButton);
+            this.repeatConversionGroup.Controls.Add(this.yesButton);
+            this.repeatConversionGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.repeatConversionGroup.Location = new System.Drawing.Point(282, 433);
+            this.repeatConversionGroup.Name = "repeatConversionGroup";
+            this.repeatConversionGroup.Size = new System.Drawing.Size(283, 161);
+            this.repeatConversionGroup.TabIndex = 9;
+            this.repeatConversionGroup.TabStop = false;
+            this.repeatConversionGroup.Text = "Another Conversion?";
             // 
-            // NoButton
+            // noButton
             // 
-            this.NoButton.AutoSize = true;
-            this.NoButton.Location = new System.Drawing.Point(20, 102);
-            this.NoButton.Name = "NoButton";
-            this.NoButton.Size = new System.Drawing.Size(72, 29);
-            this.NoButton.TabIndex = 1;
-            this.NoButton.TabStop = true;
-            this.NoButton.Text = "No";
-            this.NoButton.UseVisualStyleBackColor = true;
-            this.NoButton.CheckedChanged += new System.EventHandler(this.RepeatConversion_CheckedChanged);
+            this.noButton.AutoSize = true;
+            this.noButton.Location = new System.Drawing.Point(20, 102);
+            this.noButton.Name = "noButton";
+            this.noButton.Size = new System.Drawing.Size(72, 29);
+            this.noButton.TabIndex = 1;
+            this.noButton.TabStop = true;
+            this.noButton.Text = "No";
+            this.noButton.UseVisualStyleBackColor = true;
+            this.noButton.CheckedChanged += new System.EventHandler(this.repeatConversion_CheckedChanged);
             // 
-            // YesButton
+            // yesButton
             // 
-            this.YesButton.AutoSize = true;
-            this.YesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YesButton.Location = new System.Drawing.Point(20, 52);
-            this.YesButton.Name = "YesButton";
-            this.YesButton.Size = new System.Drawing.Size(84, 29);
-            this.YesButton.TabIndex = 0;
-            this.YesButton.TabStop = true;
-            this.YesButton.Text = "Yes";
-            this.YesButton.UseVisualStyleBackColor = true;
-            this.YesButton.CheckedChanged += new System.EventHandler(this.RepeatConversion_CheckedChanged);
+            this.yesButton.AutoSize = true;
+            this.yesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yesButton.Location = new System.Drawing.Point(20, 52);
+            this.yesButton.Name = "yesButton";
+            this.yesButton.Size = new System.Drawing.Size(84, 29);
+            this.yesButton.TabIndex = 0;
+            this.yesButton.TabStop = true;
+            this.yesButton.Text = "Yes";
+            this.yesButton.UseVisualStyleBackColor = true;
+            this.yesButton.CheckedChanged += new System.EventHandler(this.repeatConversion_CheckedChanged);
             // 
-            // MyAmountCode
+            // myAmountCode
             // 
-            this.MyAmountCode.AutoSize = true;
-            this.MyAmountCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyAmountCode.Location = new System.Drawing.Point(20, 313);
-            this.MyAmountCode.Name = "MyAmountCode";
-            this.MyAmountCode.Size = new System.Drawing.Size(59, 25);
-            this.MyAmountCode.TabIndex = 10;
-            this.MyAmountCode.Text = "AUD";
+            this.myAmountCode.AutoSize = true;
+            this.myAmountCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myAmountCode.Location = new System.Drawing.Point(20, 313);
+            this.myAmountCode.Name = "myAmountCode";
+            this.myAmountCode.Size = new System.Drawing.Size(59, 25);
+            this.myAmountCode.TabIndex = 10;
+            this.myAmountCode.Text = "AUD";
             // 
-            // ConvertAmountCode
+            // convertAmountCode
             // 
-            this.ConvertAmountCode.AutoSize = true;
-            this.ConvertAmountCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConvertAmountCode.Location = new System.Drawing.Point(551, 312);
-            this.ConvertAmountCode.Name = "ConvertAmountCode";
-            this.ConvertAmountCode.Size = new System.Drawing.Size(59, 25);
-            this.ConvertAmountCode.TabIndex = 11;
-            this.ConvertAmountCode.Text = "AUD";
+            this.convertAmountCode.AutoSize = true;
+            this.convertAmountCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.convertAmountCode.Location = new System.Drawing.Point(551, 312);
+            this.convertAmountCode.Name = "convertAmountCode";
+            this.convertAmountCode.Size = new System.Drawing.Size(59, 25);
+            this.convertAmountCode.TabIndex = 11;
+            this.convertAmountCode.Text = "AUD";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 638);
-            this.Controls.Add(this.ConvertAmountCode);
-            this.Controls.Add(this.MyAmountCode);
-            this.Controls.Add(this.RepeatConversionGroup);
-            this.Controls.Add(this.EqualsButton);
-            this.Controls.Add(this.ConvertAmountLabel);
-            this.Controls.Add(this.MyAmountLabel);
-            this.Controls.Add(this.ConvertAmountText);
-            this.Controls.Add(this.MyAmountText);
-            this.Controls.Add(this.ConvertCurrencyLabel);
-            this.Controls.Add(this.MyCurrencyLabel);
-            this.Controls.Add(this.ConvertCurrencyBox);
-            this.Controls.Add(this.MyCurrencyBox);
+            this.Controls.Add(this.convertAmountCode);
+            this.Controls.Add(this.myAmountCode);
+            this.Controls.Add(this.repeatConversionGroup);
+            this.Controls.Add(this.equalsButton);
+            this.Controls.Add(this.convertAmountLabel);
+            this.Controls.Add(this.myAmountLabel);
+            this.Controls.Add(this.convertAmountText);
+            this.Controls.Add(this.myAmountText);
+            this.Controls.Add(this.convertCurrencyLabel);
+            this.Controls.Add(this.myCurrencyLabel);
+            this.Controls.Add(this.convertCurrencyBox);
+            this.Controls.Add(this.myCurrencyBox);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Currency Converter";
-            this.RepeatConversionGroup.ResumeLayout(false);
-            this.RepeatConversionGroup.PerformLayout();
+            this.repeatConversionGroup.ResumeLayout(false);
+            this.repeatConversionGroup.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,20 +210,20 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox MyCurrencyBox;
-        private System.Windows.Forms.ComboBox ConvertCurrencyBox;
-        private System.Windows.Forms.Label MyCurrencyLabel;
-        private System.Windows.Forms.Label ConvertCurrencyLabel;
-        private System.Windows.Forms.TextBox MyAmountText;
-        private System.Windows.Forms.TextBox ConvertAmountText;
-        private System.Windows.Forms.Label MyAmountLabel;
-        private System.Windows.Forms.Label ConvertAmountLabel;
-        private System.Windows.Forms.Button EqualsButton;
-        private System.Windows.Forms.GroupBox RepeatConversionGroup;
-        private System.Windows.Forms.RadioButton NoButton;
-        private System.Windows.Forms.RadioButton YesButton;
-        private System.Windows.Forms.Label MyAmountCode;
-        private System.Windows.Forms.Label ConvertAmountCode;
+        private System.Windows.Forms.ComboBox myCurrencyBox;
+        private System.Windows.Forms.ComboBox convertCurrencyBox;
+        private System.Windows.Forms.Label myCurrencyLabel;
+        private System.Windows.Forms.Label convertCurrencyLabel;
+        private System.Windows.Forms.TextBox myAmountText;
+        private System.Windows.Forms.TextBox convertAmountText;
+        private System.Windows.Forms.Label myAmountLabel;
+        private System.Windows.Forms.Label convertAmountLabel;
+        private System.Windows.Forms.Button equalsButton;
+        private System.Windows.Forms.GroupBox repeatConversionGroup;
+        private System.Windows.Forms.RadioButton noButton;
+        private System.Windows.Forms.RadioButton yesButton;
+        private System.Windows.Forms.Label myAmountCode;
+        private System.Windows.Forms.Label convertAmountCode;
     }
 }
 

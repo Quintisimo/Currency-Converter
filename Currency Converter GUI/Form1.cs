@@ -10,79 +10,102 @@ using System.Windows.Forms;
 
 namespace Currency_Converter_GUI {
     public partial class Form1 : Form {
-        const int GET_CODE = 4;
-        const int CODE_LENGTH = 3;
-        string my_currency = "";
-        string convert_currency = "";
-        string user_input = "";
+        string myCurrency = "";
+        string convertCurrency = "";
+        string userInput = "";
 
         public Form1() {
             InitializeComponent();
-            MyCurrencyBox.DataSource = Currency_Exchange_Class.InitialiseComboBox();
-            ConvertCurrencyBox.DataSource = Currency_Exchange_Class.InitialiseComboBox();
-            MyCurrencyBox.SelectedIndexChanged += new EventHandler(MyCurrencyBox_SelectedIndexChanged);
-            ConvertCurrencyBox.SelectedIndexChanged += new EventHandler(ConvertCurrencyBox_SelectedIndexChanged);
-            ConvertCurrencyLabel.Enabled = false;
-            ConvertCurrencyBox.Enabled = false;
-            MyAmountLabel.Enabled = false;
-            MyAmountText.Enabled = false;
-            MyAmountCode.Visible = false;
-            ConvertAmountCode.Visible = false;
-            EqualsButton.Enabled = false;
-            ConvertAmountLabel.Enabled = false;
-            ConvertAmountText.Enabled = false;
-            RepeatConversionGroup.Visible = false;
+            myCurrencyBox.DataSource = Currency_Exchange_Class.InitialiseComboBox();
+            convertCurrencyBox.DataSource = Currency_Exchange_Class.InitialiseComboBox();
+            myCurrencyBox.SelectedIndexChanged += new EventHandler(my_currency_box_SelectedIndexChanged);
+            convertCurrencyBox.SelectedIndexChanged += new EventHandler(convert_currency_box_SelectedIndexChanged);
+            DisableControls();
+            
         }//end Form1
 
-        private void MyCurrencyBox_SelectedIndexChanged(object sender, EventArgs e) {
-            my_currency = MyCurrencyBox.SelectedValue.ToString();
+        /// <summary>
+        /// Disables all the controls except the first combo box.
+        /// </summary>
+        private void DisableControls() {
+            convertCurrencyLabel.Enabled = false;
+            convertCurrencyBox.Enabled = false;
+            myAmountLabel.Enabled = false;
+            myAmountText.Enabled = false;
+            myAmountCode.Visible = false;
+            convertAmountCode.Visible = false;
+            equalsButton.Enabled = false;
+            convertAmountLabel.Enabled = false;
+            convertAmountText.Enabled = false;
+            repeatConversionGroup.Visible = false;
+        }
 
-            if (my_currency != "") {
-                MyAmountCode.Text = my_currency.Substring(my_currency.Length - GET_CODE, CODE_LENGTH);
-                MyCurrencyLabel.Enabled = false;
-                MyCurrencyBox.Enabled = false;
-                ConvertCurrencyLabel.Enabled = true;
-                ConvertCurrencyBox.Enabled = true;
+        /// <summary>
+        /// Resets the form so the user can perform another calculation.
+        /// </summary>
+        private void ResetForm() {
+            myCurrencyBox.ResetText();
+            convertCurrencyBox.ResetText();
+            myAmountText.Clear();
+            convertAmountText.Clear();
+            yesButton.Checked = false;
+            noButton.Checked = false;
+            DisableControls();
+            myCurrencyLabel.Enabled = true;
+            myCurrencyBox.Enabled = true;
+        }
+
+        private void myCurrencyBox_SelectedIndexChanged(object sender, EventArgs e) {
+            myCurrency = myCurrencyBox.SelectedValue.ToString();
+
+            if (myCurrency != "") {
+                myAmountCode.Text = ((Currencies)myCurrencyBox.SelectedIndex).ToString();
+                myCurrencyLabel.Enabled = false;
+                myCurrencyBox.Enabled = false;
+                convertCurrencyLabel.Enabled = true;
+                convertCurrencyBox.Enabled = true;
             }
         }
 
-        private void ConvertCurrencyBox_SelectedIndexChanged(object sender, EventArgs e) {
-            convert_currency = ConvertCurrencyBox.SelectedValue.ToString();
-      
-            if (convert_currency != "") {
-                ConvertAmountCode.Text = convert_currency.Substring(convert_currency.Length - GET_CODE, CODE_LENGTH);
-                ConvertCurrencyLabel.Enabled = false;
-                ConvertCurrencyBox.Enabled = false;
-                MyAmountLabel.Enabled = true;
-                MyAmountText.Enabled = true;
-                MyAmountCode.Visible = true;
+        private void convertCurrencyBox_SelectedIndexChanged(object sender, EventArgs e) {
+            convertCurrency = convertCurrencyBox.SelectedValue.ToString();
+
+            if (convertCurrency != "") {
+                convertAmountCode.Text = ((Currencies)convertCurrencyBox.SelectedIndex).ToString();
+                convertCurrencyLabel.Enabled = false;
+                convertCurrencyBox.Enabled = false;
+                myAmountLabel.Enabled = true;
+                myAmountText.Enabled = true;
+                myAmountCode.Visible = true;
             }
             
         }
 
-        private void MyAmountText_TextChanged(object sender, EventArgs e) {
-            user_input = MyAmountText.Text;
+        private void myAmountText_TextChanged(object sender, EventArgs e) {
+            userInput = myAmountText.Text;
 
-            if (user_input != "") {
-                EqualsButton.Enabled = true;
-                ConvertAmountLabel.Enabled = false;
-                ConvertAmountText.Enabled = false;
-                RepeatConversionGroup.Visible = false;
+            if (userInput != "") {
+                equalsButton.Enabled = true;
+                convertAmountLabel.Enabled = false;
+                convertAmountText.Enabled = false;
+                repeatConversionGroup.Visible = false;
             }
         }
 
-        private void EqualsButton_Click(object sender, EventArgs e) {
+        private void equalsButton_Click(object sender, EventArgs e) {
             double my_amount = 0;
             double converted_amount = 0;
 
-            if (double.TryParse(user_input, out my_amount) == true) {
+            if (double.TryParse(userInput, out my_amount) == true) {
                 if (my_amount > 0) {
-                    converted_amount = Currency_Exchange_Class.CurrencyConversion(my_currency, convert_currency, my_amount);
-                    ConvertAmountText.Text = converted_amount.ToString();
-                    MyAmountLabel.Enabled = false;
-                    MyAmountText.Enabled = false;
-                    ConvertAmountCode.Visible = true;
-                    RepeatConversionGroup.Visible = true;
+                    converted_amount = Currency_Exchange_Class.CurrencyConversion(
+                        (Currencies)myCurrencyBox.SelectedIndex, 
+                        (Currencies)convertCurrencyBox.SelectedIndex, my_amount);
+                    convertAmountText.Text = converted_amount.ToString();
+                    myAmountLabel.Enabled = false;
+                    myAmountText.Enabled = false;
+                    convertAmountCode.Visible = true;
+                    repeatConversionGroup.Visible = true;
                 } else {
                     MessageBox.Show("You entered a negative number", "Negative Number", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -91,10 +114,10 @@ namespace Currency_Converter_GUI {
             }
         }
 
-        private void RepeatConversion_CheckedChanged(object sender, EventArgs e) {
-            if (YesButton.Checked) {
-                Application.Restart();
-            } else if (NoButton.Checked) {
+        private void repeatConversion_CheckedChanged(object sender, EventArgs e) {
+            if (yesButton.Checked) {
+                ResetForm();
+            } else if (noButton.Checked) {
                 this.Close();
             }
         }
