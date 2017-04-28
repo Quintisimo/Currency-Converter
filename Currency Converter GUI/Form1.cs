@@ -9,6 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Currency_Converter_GUI {
+
+    /// <summary>
+    /// GUI program that converts currencies.
+    /// 
+    /// Author Quintus Cardozo April 2015
+    /// Student Number: n9703578
+    /// 
+    /// </summary>
     public partial class Form1 : Form {
         string myCurrency = "";
         string convertCurrency = "";
@@ -18,10 +26,9 @@ namespace Currency_Converter_GUI {
             InitializeComponent();
             myCurrencyBox.DataSource = Currency_Exchange_Class.InitialiseComboBox();
             convertCurrencyBox.DataSource = Currency_Exchange_Class.InitialiseComboBox();
-            myCurrencyBox.SelectedIndexChanged += new EventHandler(my_currency_box_SelectedIndexChanged);
-            convertCurrencyBox.SelectedIndexChanged += new EventHandler(convert_currency_box_SelectedIndexChanged);
+            myCurrencyBox.SelectedIndexChanged += new EventHandler(myCurrencyBox_SelectedIndexChanged);
+            convertCurrencyBox.SelectedIndexChanged += new EventHandler(convertCurrencyBox_SelectedIndexChanged);
             DisableControls();
-            
         }//end Form1
 
         /// <summary>
@@ -124,4 +131,3 @@ namespace Currency_Converter_GUI {
 
     }//end class
 }
-

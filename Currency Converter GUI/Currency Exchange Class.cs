@@ -8,7 +8,14 @@ using System.Windows.Forms;
 namespace Currency_Converter_GUI {
 
     enum Currencies { AUD = 1, CYN, DKK, EUR, INR, NZD, AED, GBP, USD, VND };
-   
+
+    /// <summary>
+    /// GUI program that converts currencies.
+    /// 
+    /// Author Quintus Cardozo April 2015
+    /// Student Number: n9703578
+    /// 
+    /// </summary>
     static class Currency_Exchange_Class {
 
         private static double[] xRates = { 0, 1, 4.2681, 5.0844, 0.6849, 43.5921, 0.9705, 2.7094, 0.4963, 0.7382, 19115.5547 };
