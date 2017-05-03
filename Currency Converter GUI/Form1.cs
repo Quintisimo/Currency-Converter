@@ -115,17 +115,27 @@ namespace Currency_Converter_GUI {
                     repeatConversionGroup.Visible = true;
                 } else {
                     MessageBox.Show("You entered a negative number", "Negative Number", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    myAmountText.Clear();
                 }
             } else {
                 MessageBox.Show("Please enter a number greater than zero", "Non-Numerical Value",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                myAmountText.Clear();
             }
         }
 
         private void repeatConversion_CheckedChanged(object sender, EventArgs e) {
+            DialogResult quit;
+
             if (yesButton.Checked) {
                 ResetForm();
             } else if (noButton.Checked) {
-                this.Close();
+                quit = MessageBox.Show("Are you sure you want to exit", "Quit Applicaion", MessageBoxButtons.YesNo);
+                
+                if (quit == System.Windows.Forms.DialogResult.Yes) {
+                    this.Close();
+                } else if (quit == System.Windows.Forms.DialogResult.No) {
+                    noButton.Checked = false;
+                }
             }
         }
 

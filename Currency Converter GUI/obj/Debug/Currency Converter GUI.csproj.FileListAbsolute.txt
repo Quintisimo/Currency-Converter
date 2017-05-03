@@ -25,3 +25,12 @@ C:\Users\quint\OneDrive\Documents\GitHub\Currency-Converter\Currency Converter G
 C:\Users\quint\OneDrive\Documents\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency_Converter_GUI.Form1.resources
 C:\Users\quint\OneDrive\Documents\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency_Converter_GUI.Properties.Resources.resources
 C:\Users\quint\OneDrive\Documents\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency Converter GUI.csproj.GenerateResource.Cache
+C:\GitHub\Currency-Converter\Currency Converter GUI\bin\Debug\Currency Converter GUI.exe.config
+C:\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency Converter GUI.exe
+C:\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency Converter GUI.pdb
+C:\GitHub\Currency-Converter\Currency Converter GUI\bin\Debug\Currency Converter GUI.exe
+C:\GitHub\Currency-Converter\Currency Converter GUI\bin\Debug\Currency Converter GUI.pdb
+C:\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency Converter GUI.csprojResolveAssemblyReference.cache
+C:\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency_Converter_GUI.Form1.resources
+C:\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency_Converter_GUI.Properties.Resources.resources
+C:\GitHub\Currency-Converter\Currency Converter GUI\obj\Debug\Currency Converter GUI.csproj.GenerateResource.Cache
